@@ -25,7 +25,7 @@ function countBmi1() {
   } else if (female1.checked) {
     p.push("female");
   }
-  // calculate the initial BMR
+  // calculate the initial BMR value
   bmr = 10 * Number(p[2]) + 6.25 * Number(p[1]) - 5 * Number(p[0]);
 
   // gender specific adjustment
