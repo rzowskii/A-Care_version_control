@@ -130,12 +130,6 @@ app.post('/posts_data', async (req, res)  => {
     return res.status(400).send("Who the fuck are u bitch! i got ur ip now hahaha!");
   }
   _writeGoogleSheet(googleSheetClient,[[sex1, age1, bmi, bmr, tdee]],"bmi_tdee");
-  // db.query('INSERT INTO web (sex, age, bmi,bmr,tdee) VALUES (?, ?, ?,?,?)', [sex1, age1, bmi, bmr, tdee], (err, result) => {
-  //   if (err) {
-  //     return console.error(err.message);
-  //   }
-  //   res.send({ id: result.insertId, sex1, age1, bmi, bmr, tdee });
-  // });
 });
 
 app.post('/posts_feedback', async (req, res)  => {
